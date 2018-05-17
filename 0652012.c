@@ -17,9 +17,9 @@ int main()
 void remain(int data[])
 {
 	 int i,x;
-    srand( (unsigned)time(NULL));
-    for(x=0; x<5 ; x++){
-		data[x]=10+rand()%41 ;
+    srand( (unsigned)time(NULL));//產生10~40亂數 
+    for(x=0; x<5 ; x++){         //將亂數依序存入陣列 
+		data[x]=10+rand()%41 ;  
 		for(i=0;i<x;i++){
 			if(data[i]==data[x]){
 				data[i]=rand()%41+10;
@@ -30,7 +30,7 @@ void remain(int data[])
     }
 	return;   
 }
-void remain1(int vixx[])
+void remain1(int vixx[])       //亂數排大小 
 {
 	int x=0,y=0;
 	int temp=0;
